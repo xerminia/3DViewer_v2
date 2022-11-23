@@ -1,0 +1,45 @@
+\input texinfo
+@settitle 3D Viewer v2.1
+
+@copying
+Copyright @copyright{} school 21
+@end copying
+
+@titlepage
+@title 3d viewer 2.1
+@page
+@vskip 0pt plus 2filll
+@insertcopying
+@end titlepage
+
+@chapter About the program
+The program is implemented on the graphics libraries QT and Opengl. With it, the user can:
+@itemize
+@item Browse objects by downloading files with the .obj extension.
+@item Move, rotate, scale the object loaded by the user.
+@item Choose the type of lines, vertices.
+@item Choose the color of the background, lines, vertices.
+@item Choose the size of vertices and lines.
+@item Select a projection type.
+@item Apply lighting, its position, intensity and color
+@item You can choose how you want to draw the model. Choose from wireframe, flat shading, or soft shading
+@item You can apply a texture to an object of your choice
+
+@item Save the resulting result in .jpeg, .bmp, .gif formats.
+@end itemize
+@chapter How to start
+To start using the program, it must be installed using the make install command. This command will install the program on the desktop in the 3DViewer_v2.0 folder.
+@chapter How to use
+@itemize
+@item To download an object, click "Open file" and specify the path to it
+@item To move or rotate an object, enter a value in the line and click on the button with the name of the desired axis. Positive value - clockwise rotation, shift to the right/up/toward depending on the selected axis. Negative value - turn counterclockwise, shift left/down/away from yourself depending on the selected axis. If you want to return the object to its original position, click the Reset Settings button.
+@item To zoom in Press the "-" button to zoom out and the "+" button to zoom in
+@item To use the settings (color, size, etc.) select the desired ones and click the "Apply" button. This program saves the settings after it is closed. To reset your settings, click the "Reset Settings" button.
+@item To save the result in image format, click on the "Image" button and the program will prompt you to specify the file name and path to save.
+@item To control the light source, use the keys: "W" - up, "S" - down, "A" - left, "D" - right, "space" - forward, "shift" - back. You can control the intensity of light and color in the lighting settings.
+@item To save the resulting result in animation format, click on the "Gif" button, a 5-second recording will begin. At the end of the time, the program will prompt you to select a file name and path to save.
+@item In order to choose the rendering method of the model you have chosen, in the main settings, make a choice in the model tab
+@item In order to apply a texture to the object of your choice, press the "select" button and select the file you need. In order to remove the texture, click the "remove" button
+@end itemize
+@chapter Delete
+You can remove the user program using the make uninstall command.

@@ -1,0 +1,2536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1321</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1321</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1321</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+background-color: #404040;
+ border-color: #BEBEBE;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="OpenGLWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1321</width>
+      <height>900</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1321</width>
+      <height>900</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1321</width>
+      <height>900</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:  #F4F4EF;
+</string>
+    </property>
+    <widget class="QFrame" name="frame_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>251</width>
+       <height>905</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+background-color: rgba(64, 64, 64, 128);
+ border-color: #BEBEBE;
+}
+
+QFrame:hover {
+background-color: #404040;
+ border-color: #BEBEBE;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="pushButtonRotateX">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>532</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>14</x>
+        <y>206</y>
+        <width>221</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+color: rgb(255, 255, 255);
+background-color: #404040;
+ border-color: #BEBEBE;
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="labelFilename">
+       <property name="geometry">
+        <rect>
+         <x>119</x>
+         <y>10</y>
+         <width>89</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+background-color: #828282;
+ border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelEdgesCount">
+       <property name="geometry">
+        <rect>
+         <x>119</x>
+         <y>47</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+background-color: #828282;
+ border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelVertexCount">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>83</y>
+         <width>89</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+background-color: #828282;
+ border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelNameFile">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>11</y>
+         <width>99</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>99</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>99</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+background-color: #404040;
+ border-color: #BEBEBE;
+ border-width:0px;
+ border-radius:0px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Имя файла:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelEdges">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>49</y>
+         <width>99</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>99</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>99</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+background-color: #404040;
+ border-color: #BEBEBE;
+ border-width:0px;
+ border-radius:0px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Кол-во ребер:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelVertex">
+       <property name="geometry">
+        <rect>
+         <x>13</x>
+         <y>88</y>
+         <width>99</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>99</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>99</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+background-color: #404040;
+ border-color: #BEBEBE;
+ border-width:0px;
+ border-radius:0px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Кол-во вершин:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="labelSettingsAfinRotate">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>488</y>
+        <width>190</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #BEBEBE;
+background-color: rgb(0, 0, 0);
+ border-radius:6px;
+</string>
+      </property>
+      <property name="text">
+       <string>Поворот</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonRotateZ">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>532</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Z</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="doubleSpinBoxRotate">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>592</y>
+        <width>191</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDoubleSpinBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QDoubleSpinBox:down-button  {
+height: 16px;
+ width: 16px;
+ subcontrol-position: center left;
+image: url(:/icon/Icons/left_arrow.png);
+border-color: #BEBEBE;
+border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::up-button  {
+ height: 16px;
+ width: 16px;
+ subcontrol-position: center right;
+image: url(:/icon/Icons/right_arrow.png);
+border-color: #BEBEBE;
+border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::down-button:pressed {
+color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::up-button:pressed {
+color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="minimum">
+       <double>-360.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>360.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>1.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>5.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonRotateY">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>532</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Y</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonMovingX">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>387</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelSettingsAfinMove">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>344</y>
+        <width>190</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #BEBEBE;
+background-color: rgb(0, 0, 0);
+ border-radius:6px;
+</string>
+      </property>
+      <property name="text">
+       <string>Сдвиг</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonMovingZ">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>387</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Z</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonMovingY">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>387</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Y</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="openFile">
+      <property name="geometry">
+       <rect>
+        <x>34</x>
+        <y>159</y>
+        <width>181</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Открыть файл</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="doubleSpinBoxMoving">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>447</y>
+        <width>191</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDoubleSpinBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QDoubleSpinBox:down-button  {
+height: 16px;
+ width: 16px;
+ subcontrol-position: center left;
+image: url(:/icon/Icons/left_arrow.png);
+border-color: #BEBEBE;
+border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::up-button  {
+ height: 16px;
+ width: 16px;
+ subcontrol-position: center right;
+image: url(:/icon/Icons/right_arrow.png);
+border-color: #BEBEBE;
+border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::down-button:pressed {
+color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::up-button:pressed {
+color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="minimum">
+       <double>-100.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>100.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.100000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.250000000000000</double>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonMinusScale">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>672</y>
+        <width>81</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonScreencast">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>770</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>70</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Screencast</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelSettingsAfinScale">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>628</y>
+        <width>190</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #BEBEBE;
+background-color: rgb(0, 0, 0);
+ border-radius:6px;
+</string>
+      </property>
+      <property name="text">
+       <string>Маштаб</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonPlusScale">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>672</y>
+        <width>81</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_icon">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>20</y>
+        <width>141</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/icon/Icons/main.png);
+background-color: rgba(0, 0, 0, 0);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonImage">
+      <property name="geometry">
+       <rect>
+        <x>36</x>
+        <y>820</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>70</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Image</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonGif">
+      <property name="geometry">
+       <rect>
+        <x>134</x>
+        <y>820</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>70</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Gif</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="easterEgg">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>50</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>0</y>
+      <width>261</width>
+      <height>905</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+background-color: rgba(64, 64, 64, 128);
+ border-color: #BEBEBE;
+}
+
+QFrame:hover {
+background-color: #404040;
+ border-color: #BEBEBE;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="chooseColorBG">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>153</y>
+       <width>90</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>ВЫБРАТЬ</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBoxTypeLines">
+     <property name="geometry">
+      <rect>
+       <x>107</x>
+       <y>330</y>
+       <width>120</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QComboBox::drop-down  {
+  height: 16px;
+ width: 16px;
+ subcontrol-position: center right;
+image: url(:/icon/Icons/arrow_to_down.png);
+border-color: #BEBEBE;
+border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QComboBox::drop-down:pressed {
+color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+
+QComboBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}</string>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>Нет</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Прямая</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Пунктирная</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBoxTypeVertex">
+     <property name="geometry">
+      <rect>
+       <x>106</x>
+       <y>500</y>
+       <width>120</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QComboBox::drop-down  {
+  height: 16px;
+ width: 16px;
+ subcontrol-position: center right;
+image: url(:/icon/Icons/arrow_to_down.png);
+border-color: #BEBEBE;
+border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QComboBox::drop-down:pressed {
+color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+
+QComboBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}</string>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>Нет</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Круг</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Квадрат</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="labelTypeLines">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>330</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color:rgba(0,0,0,0);
+</string>
+     </property>
+     <property name="text">
+      <string>ТИП</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelChoosedColorModel">
+     <property name="geometry">
+      <rect>
+       <x>205</x>
+       <y>241</y>
+       <width>21</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTypeVertex">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>500</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color:rgba(0,0,0,0);
+</string>
+     </property>
+     <property name="text">
+      <string>ТИП</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelSettingsTexture">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>752</y>
+       <width>190</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #BEBEBE;
+background-color: rgb(0, 0, 0);
+ border-radius:6px;
+</string>
+     </property>
+     <property name="text">
+      <string>Настройки текстуры</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBoxSizeLines">
+     <property name="geometry">
+      <rect>
+       <x>115</x>
+       <y>410</y>
+       <width>110</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QDoubleSpinBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QDoubleSpinBox:down-button  {
+height: 16px;
+ width: 16px;
+ subcontrol-position: center left;
+image: url(:/icon/Icons/left_arrow.png);
+border-color: #BEBEBE;
+border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::up-button  {
+ height: 16px;
+ width: 16px;
+ subcontrol-position: center right;
+image: url(:/icon/Icons/right_arrow.png);
+border-color: #BEBEBE;
+border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::down-button:pressed {
+color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::up-button:pressed {
+color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="minimum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>20.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelChoosedColorLines">
+     <property name="geometry">
+      <rect>
+       <x>204</x>
+       <y>370</y>
+       <width>21</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelChoosedColorVertex">
+     <property name="geometry">
+      <rect>
+       <x>204</x>
+       <y>540</y>
+       <width>21</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelColorLight">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>664</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color:rgba(0,0,0,0);
+</string>
+     </property>
+     <property name="text">
+      <string>ЦВЕТ</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelColorModel">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>241</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(0,0,0,0);
+color: rgb(255, 255, 255);
+
+</string>
+     </property>
+     <property name="text">
+      <string>ЦВЕТ</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="chooseColorLight">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>664</y>
+       <width>90</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>ВЫБРАТЬ</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelSettingsModel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>193</y>
+       <width>190</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #BEBEBE;
+background-color: rgb(0, 0, 0);
+ border-radius:6px;
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Настройки модели</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelSettingsVertex">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>450</y>
+       <width>190</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #BEBEBE;
+background-color: rgb(0, 0, 0);
+ border-radius:6px;
+</string>
+     </property>
+     <property name="text">
+      <string>Настройки точек</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBoxSizeVertex">
+     <property name="geometry">
+      <rect>
+       <x>104</x>
+       <y>580</y>
+       <width>120</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QDoubleSpinBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QDoubleSpinBox:down-button  {
+height: 16px;
+ width: 16px;
+ subcontrol-position: center left;
+image: url(:/icon/Icons/left_arrow.png);
+border-color: #BEBEBE;
+border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::up-button  {
+ height: 16px;
+ width: 16px;
+ subcontrol-position: center right;
+image: url(:/icon/Icons/right_arrow.png);
+border-color: #BEBEBE;
+border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::down-button:pressed {
+color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::up-button:pressed {
+color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="minimum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>20.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelProection">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>89</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color:rgba(0,0,0,0);
+</string>
+     </property>
+     <property name="text">
+      <string>ПРОЕКЦИЯ</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBoxPowerLight">
+     <property name="geometry">
+      <rect>
+       <x>104</x>
+       <y>701</y>
+       <width>120</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QDoubleSpinBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QDoubleSpinBox:down-button  {
+height: 16px;
+ width: 16px;
+ subcontrol-position: center left;
+image: url(:/icon/Icons/left_arrow.png);
+border-color: #BEBEBE;
+border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::up-button  {
+ height: 16px;
+ width: 16px;
+ subcontrol-position: center right;
+image: url(:/icon/Icons/right_arrow.png);
+border-color: #BEBEBE;
+border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::down-button:pressed {
+color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+
+QDoubleSpinBox::up-button:pressed {
+color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>100.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>15.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelSettingsLight">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>620</y>
+       <width>190</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #BEBEBE;
+background-color: rgb(0, 0, 0);
+ border-radius:6px;
+</string>
+     </property>
+     <property name="text">
+      <string>Настройки освещения</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBoxTypeProection">
+     <property name="geometry">
+      <rect>
+       <x>98</x>
+       <y>89</y>
+       <width>130</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QComboBox::drop-down  {
+  height: 16px;
+ width: 16px;
+ subcontrol-position: center right;
+image: url(:/icon/Icons/arrow_to_down.png);
+border-color: #BEBEBE;
+border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QComboBox::drop-down:pressed {
+color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+
+QComboBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}</string>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>Параллельная</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Центральная</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="labelModel">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>120</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color:rgba(0,0,0,0);
+</string>
+     </property>
+     <property name="text">
+      <string>МОДЕЛЬ</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelSizeLines">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>410</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color:rgba(0,0,0,0);</string>
+     </property>
+     <property name="text">
+      <string>РАЗМЕР</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="chooseColorLines">
+     <property name="geometry">
+      <rect>
+       <x>114</x>
+       <y>370</y>
+       <width>80</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>ВЫБРАТЬ</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelSettingsLines">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>280</y>
+       <width>190</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #BEBEBE;
+background-color: rgb(0, 0, 0);
+ border-radius:6px;
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Настройки линий</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="chooseColorModel">
+     <property name="geometry">
+      <rect>
+       <x>115</x>
+       <y>241</y>
+       <width>80</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>ВЫБРАТЬ</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelSizeVertex">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>580</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color:rgba(0,0,0,0);
+
+</string>
+     </property>
+     <property name="text">
+      <string>РАЗМЕР</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="chooseTextureOff">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>798</y>
+       <width>90</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>СНЯТЬ</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelMainSettings">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>39</y>
+       <width>190</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #BEBEBE;
+background-color: rgb(0, 0, 0);
+ border-radius:6px;
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Основные настройки</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelColorLines">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>370</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color:rgba(0,0,0,0);
+</string>
+     </property>
+     <property name="text">
+      <string>ЦВЕТ</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelChoosedColorLight">
+     <property name="geometry">
+      <rect>
+       <x>205</x>
+       <y>664</y>
+       <width>21</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelColorVertex">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>540</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color:rgba(0,0,0,0);
+</string>
+     </property>
+     <property name="text">
+      <string>ЦВЕТ</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelPowerLight">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>701</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color:rgba(0,0,0,0);
+
+</string>
+     </property>
+     <property name="text">
+      <string>СИЛА</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBoxTypeModel">
+     <property name="geometry">
+      <rect>
+       <x>96</x>
+       <y>120</y>
+       <width>130</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QComboBox::drop-down  {
+  height: 16px;
+ width: 16px;
+ subcontrol-position: center right;
+image: url(:/icon/Icons/arrow_to_down.png);
+border-color: #BEBEBE;
+border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+
+QComboBox::drop-down:pressed {
+color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+
+QComboBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}</string>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>Каркасная</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Плоское затенение</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Мягкое затенение</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="chooseTexture">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>798</y>
+       <width>90</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>ВЫБРАТЬ</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelChoosedColorBG">
+     <property name="geometry">
+      <rect>
+       <x>205</x>
+       <y>153</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="chooseColorVertex">
+     <property name="geometry">
+      <rect>
+       <x>104</x>
+       <y>540</y>
+       <width>90</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>ВЫБРАТЬ</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelColorBG">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>153</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color:rgba(0,0,0,0);
+</string>
+     </property>
+     <property name="text">
+      <string>ЦВЕТ ФОНА</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="resetSettings">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>850</y>
+       <width>190</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Сбросить настройки</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1321</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu3DVIEWER2_0">
+    <property name="title">
+     <string>3DVIEWER2.0</string>
+    </property>
+   </widget>
+   <addaction name="menu3DVIEWER2_0"/>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>OpenGLWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">OpenGL/openglwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
